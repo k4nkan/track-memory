@@ -1,0 +1,92 @@
+[
+  {
+    "rank": 1,
+    "title": "％",
+    "artist": "mol-74",
+    "plays": 467,
+    "size": "large",
+    "spotify_url": "https://open.spotify.com/track/6jmJ2MdvZfYAxJXsc6Y00R",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b273d633fbdb111d2cdb16850c19"
+  },
+  {
+    "rank": 2,
+    "title": "せかいのしくみ",
+    "artist": "Guiano",
+    "plays": 203,
+    "size": "large",
+    "spotify_url": "https://open.spotify.com/track/32wpTEaiPHa4KccDnxfiSg",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b273572c221b6b85c24bfff17ed6"
+  },
+  {
+    "rank": 3,
+    "title": "DUET",
+    "artist": "ZICO",
+    "plays": 99,
+    "size": "large",
+    "spotify_url": "https://open.spotify.com/track/0M4O6UEu4F9SxImTsBuX9n",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b27376b859d6874da8750df6608a"
+  },
+  {
+    "rank": 4,
+    "title": "ナイトルーティーン",
+    "artist": "Tatsuya Kitani",
+    "plays": 98,
+    "size": "medium",
+    "spotify_url": "https://open.spotify.com/track/6iJhuGmMml3ujDQRC360tX",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b273a9eb1291ba95a3a30d9555de"
+  },
+  {
+    "rank": 5,
+    "title": "weekly",
+    "artist": "にしな",
+    "plays": 85,
+    "size": "medium",
+    "spotify_url": "https://open.spotify.com/track/6DeyonC0kWc9WmHo5PilOA",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b27372730d2805899829fb3d1cac"
+  },
+  {
+    "rank": 6,
+    "title": "ネイティブダンサー",
+    "artist": "sakanaction",
+    "plays": 79,
+    "size": "medium",
+    "spotify_url": "https://open.spotify.com/track/6hk0cM0LbyEc24LUSzDYfp",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b273fe517b05a7485664c0a2db4c"
+  },
+  {
+    "rank": 7,
+    "title": "アボカド",
+    "artist": "yonige",
+    "plays": 72,
+    "size": "medium",
+    "spotify_url": "https://open.spotify.com/track/6s8A7i321AAB4g4OTZY09D",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b273f4fa08d236b0a5674865402a"
+  },
+  {
+    "rank": 8,
+    "title": "フォーエバートゥエンティーンズ",
+    "artist": "sanetii",
+    "plays": 53,
+    "size": "medium",
+    "spotify_url": "https://open.spotify.com/track/5SZLeIN1qdDzvlqJA43ija",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b2732b7da77c8084f9f69350a4ce"
+  },
+  {
+    "rank": 9,
+    "title": "BLUE SOULS (spring)",
+    "artist": "A_o",
+    "plays": 50,
+    "size": "medium",
+    "spotify_url": "https://open.spotify.com/track/4d1b9ai6iL0svRcICPsZwv",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b2737cea56ccb833f3ebfcf78d44"
+  },
+  {
+    "rank": 10,
+    "title": "惑星都市",
+    "artist": "HALVES",
+    "plays": 46,
+    "size": "medium",
+    "spotify_url": "https://open.spotify.com/track/6jlWkEmC43BYnAhI4z5D0A",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b2734b4d72bc552e7ee7d537a2f4"
+  }
+]
