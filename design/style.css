@@ -8,7 +8,6 @@
   --gap: 0.25rem;
   --padding: 1rem;
   --content-width: min(90vw, 560px);
-  --border-color: #eee;
 }
 
 html,
@@ -75,7 +74,6 @@ body {
   background-size: cover;
   background-position: center;
   text-decoration: none;
-  border: 2px solid var(--border-color);
 }
 
 .item:focus-visible {
