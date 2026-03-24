@@ -13,12 +13,12 @@ function createItem(item, slot) {
   element.className = "item";
   element.href = item.spotify_url;
   element.target = "_blank";
-  element.rel = "noreferrer";
+  element.rel = "noopener noreferrer";
   element.setAttribute("aria-label", `${item.title} - ${item.artist}`);
   element.style.gridColumn = `${slot.col} / span ${slot.span}`;
   element.style.gridRow = `${slot.row} / span ${slot.span}`;
   element.style.backgroundImage = `url("${item.image_url}")`;
-  grid.appendChild(element);
+  return element;
 }
 
 function shuffle(list) {
@@ -92,6 +92,8 @@ function getPlacements(items) {
 }
 
 function buildGrid(items) {
+  grid.replaceChildren();
+
   for (let i = 0; i < MAX_RETRIES; i += 1) {
     const placements = getPlacements(items);
 
@@ -100,15 +102,23 @@ function buildGrid(items) {
     }
 
     placements.forEach(({ item, slot }) => {
-      createItem(item, slot);
+      grid.appendChild(createItem(item, slot));
     });
 
     return;
   }
+
+  console.warn("Could not place all items in the grid.");
 }
 
 fetch("../data.json")
-  .then((response) => response.json())
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error("Failed to load data.json");
+    }
+
+    return response.json();
+  })
   .then((items) => {
     const sorted = [...items].sort((a, b) => {
       const aSpan = SIZE_MAP[a.size] || SIZE_MAP.small;
@@ -122,4 +132,7 @@ fetch("../data.json")
     });
 
     buildGrid(sorted);
+  })
+  .catch((error) => {
+    console.error(error);
   });
