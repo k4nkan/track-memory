@@ -1,6 +1,7 @@
 const grid = document.getElementById("grid");
 
 const GRID_SIZE = 7;
+const MAX_RETRIES = 200;
 const SIZE_MAP = {
   large: 3,
   medium: 2,
@@ -69,22 +70,41 @@ function getRandomSlot(used, span) {
   return shuffle(availableSlots)[0] || null;
 }
 
-function buildGrid(items) {
+function getPlacements(items) {
   const used = Array.from({ length: GRID_SIZE + 1 }, () =>
     Array(GRID_SIZE + 1).fill(false),
   );
+  const placements = [];
 
-  items.forEach((item) => {
+  for (const item of items) {
     const span = SIZE_MAP[item.size] || SIZE_MAP.small;
     const slot = getRandomSlot(used, span);
 
     if (!slot) {
-      return;
+      return null;
     }
 
     fillUsed(used, slot.col, slot.row, span);
-    createItem(item, slot);
-  });
+    placements.push({ item, slot });
+  }
+
+  return placements;
+}
+
+function buildGrid(items) {
+  for (let i = 0; i < MAX_RETRIES; i += 1) {
+    const placements = getPlacements(items);
+
+    if (!placements) {
+      continue;
+    }
+
+    placements.forEach(({ item, slot }) => {
+      createItem(item, slot);
+    });
+
+    return;
+  }
 }
 
 fetch("../data.json")

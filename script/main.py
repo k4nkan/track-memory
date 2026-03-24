@@ -54,6 +54,6 @@ def fetch_monthly_ranking(year: int, month: int, limit: int = 50) -> List[Dict]:
 
 
 if __name__ == "__main__":
-    data = fetch_monthly_ranking(2026, 2, 15)
+    data = fetch_monthly_ranking(2026, 2, 20)
     with open("data.json", "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
