@@ -7,11 +7,11 @@ on:
 
 permissions:
   contents: write
-  environment: supabase-env
 
 jobs:
   update-data:
     runs-on: ubuntu-latest
+    environment: supabase-env
 
     steps:
       - name: Checkout
