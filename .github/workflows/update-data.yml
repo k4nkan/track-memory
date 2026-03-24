@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  environment: supabase-env
 
 jobs:
   update-data:
