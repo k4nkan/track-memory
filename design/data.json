@@ -1,114 +1,78 @@
 [
   {
     "rank": 1,
-    "title": "％",
-    "artist": "mol-74",
-    "plays": 467,
+    "title": "Bokeh",
+    "artist": "ぽんぽこ",
+    "plays": 449,
     "size": "large",
-    "spotify_url": "https://open.spotify.com/track/6jmJ2MdvZfYAxJXsc6Y00R",
-    "image_url": "https://i.scdn.co/image/ab67616d0000b273d633fbdb111d2cdb16850c19"
+    "spotify_url": "https://open.spotify.com/track/6TVWpReh64k1IbMDJOjvLQ",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b273290d41ec47fe63f9a0bb741d"
   },
   {
     "rank": 2,
-    "title": "せかいのしくみ",
-    "artist": "Guiano",
-    "plays": 203,
+    "title": "斜陽",
+    "artist": "ヨルシカ",
+    "plays": 163,
     "size": "large",
-    "spotify_url": "https://open.spotify.com/track/32wpTEaiPHa4KccDnxfiSg",
-    "image_url": "https://i.scdn.co/image/ab67616d0000b273572c221b6b85c24bfff17ed6"
+    "spotify_url": "https://open.spotify.com/track/2U6mFmBDjaAu6oCCDRpRet",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b273ff8170ccbc49ad0cc9c00b15"
   },
   {
     "rank": 3,
-    "title": "DUET",
-    "artist": "ZICO",
-    "plays": 99,
+    "title": "火星人",
+    "artist": "ヨルシカ",
+    "plays": 97,
     "size": "medium",
-    "spotify_url": "https://open.spotify.com/track/0M4O6UEu4F9SxImTsBuX9n",
-    "image_url": "https://i.scdn.co/image/ab67616d0000b27376b859d6874da8750df6608a"
+    "spotify_url": "https://open.spotify.com/track/5RKDnMLQdvkk4OLxF0uBj6",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b273bf6d9ce80cf22dbba24efdbb"
   },
   {
     "rank": 4,
-    "title": "ナイトルーティーン",
-    "artist": "Tatsuya Kitani",
-    "plays": 98,
+    "title": "CHILDAYS",
+    "artist": "BLOOM VASE",
+    "plays": 76,
     "size": "medium",
-    "spotify_url": "https://open.spotify.com/track/6iJhuGmMml3ujDQRC360tX",
-    "image_url": "https://i.scdn.co/image/ab67616d0000b273a9eb1291ba95a3a30d9555de"
+    "spotify_url": "https://open.spotify.com/track/1g1AXdio16Yh5SXgPBXcfq",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b273eaf3ad9824c6a965dc7bccb6"
   },
   {
     "rank": 5,
+    "title": "夜行",
+    "artist": "ヨルシカ",
+    "plays": 70,
+    "size": "medium",
+    "spotify_url": "https://open.spotify.com/track/1sPu1euMR0UlTMFFWHh4wB",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b2732475099390ec5e6487256925"
+  },
+  {
+    "rank": 6,
+    "title": "TIME TO LUV (feat. 幾田りら)",
+    "artist": "ピーナッツくん",
+    "plays": 57,
+    "size": "small",
+    "spotify_url": "https://open.spotify.com/track/2rQAvl1XSb28FVq7eL2Z2j",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b2734873c0e0aab477bb38c07886"
+  },
+  {
+    "rank": 7,
     "title": "weekly",
     "artist": "にしな",
-    "plays": 85,
-    "size": "medium",
+    "plays": 53,
+    "size": "small",
     "spotify_url": "https://open.spotify.com/track/6DeyonC0kWc9WmHo5PilOA",
     "image_url": "https://i.scdn.co/image/ab67616d0000b27372730d2805899829fb3d1cac"
   },
   {
-    "rank": 6,
-    "title": "ネイティブダンサー",
-    "artist": "sakanaction",
-    "plays": 79,
-    "size": "small",
-    "spotify_url": "https://open.spotify.com/track/6hk0cM0LbyEc24LUSzDYfp",
-    "image_url": "https://i.scdn.co/image/ab67616d0000b273fe517b05a7485664c0a2db4c"
-  },
-  {
-    "rank": 7,
-    "title": "アボカド",
-    "artist": "yonige",
-    "plays": 72,
-    "size": "small",
-    "spotify_url": "https://open.spotify.com/track/6s8A7i321AAB4g4OTZY09D",
-    "image_url": "https://i.scdn.co/image/ab67616d0000b273f4fa08d236b0a5674865402a"
-  },
-  {
     "rank": 8,
-    "title": "フォーエバートゥエンティーンズ",
-    "artist": "sanetii",
-    "plays": 53,
+    "title": "Chocolate",
+    "artist": "CHANMINA",
+    "plays": 40,
     "size": "small",
-    "spotify_url": "https://open.spotify.com/track/5SZLeIN1qdDzvlqJA43ija",
-    "image_url": "https://i.scdn.co/image/ab67616d0000b2732b7da77c8084f9f69350a4ce"
+    "spotify_url": "https://open.spotify.com/track/6CU3VvoeQgkg4Wb1vS0zj7",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b2737f485f8a4f640ff53611be0e"
   },
   {
     "rank": 9,
-    "title": "BLUE SOULS (spring)",
-    "artist": "A_o",
-    "plays": 50,
-    "size": "small",
-    "spotify_url": "https://open.spotify.com/track/4d1b9ai6iL0svRcICPsZwv",
-    "image_url": "https://i.scdn.co/image/ab67616d0000b2737cea56ccb833f3ebfcf78d44"
-  },
-  {
-    "rank": 10,
-    "title": "惑星都市",
-    "artist": "HALVES",
-    "plays": 46,
-    "size": "small",
-    "spotify_url": "https://open.spotify.com/track/6jlWkEmC43BYnAhI4z5D0A",
-    "image_url": "https://i.scdn.co/image/ab67616d0000b2734b4d72bc552e7ee7d537a2f4"
-  },
-  {
-    "rank": 11,
-    "title": "The Greatest Show",
-    "artist": "Hugh Jackman",
-    "plays": 44,
-    "size": "small",
-    "spotify_url": "https://open.spotify.com/track/4ylWMuGbMXNDgDd8lErEle",
-    "image_url": "https://i.scdn.co/image/ab67616d0000b273128057b40732c042c86de1dd"
-  },
-  {
-    "rank": 12,
-    "title": "ブルーシフト",
-    "artist": "Tele",
-    "plays": 42,
-    "size": "small",
-    "spotify_url": "https://open.spotify.com/track/1WTSSUxxwyrbKi0v1ctT2B",
-    "image_url": "https://i.scdn.co/image/ab67616d0000b273b3dce6fe184dd2b009d04eee"
-  },
-  {
-    "rank": 13,
     "title": "プレイシック",
     "artist": "ヨルシカ",
     "plays": 38,
@@ -117,66 +81,102 @@
     "image_url": "https://i.scdn.co/image/ab67616d0000b27341bbd3feddbe89025c3d4fd2"
   },
   {
-    "rank": 14,
-    "title": "TOMATO",
-    "artist": "7co",
-    "plays": 35,
+    "rank": 10,
+    "title": "Something Comforting",
+    "artist": "Porter Robinson",
+    "plays": 37,
     "size": "small",
-    "spotify_url": "https://open.spotify.com/track/0GJP5g4CjVWfxdUJ97n5wt",
-    "image_url": "https://i.scdn.co/image/ab67616d0000b27397c68c44172477c3fcba27e9"
+    "spotify_url": "https://open.spotify.com/track/0AGCxjgxUcTfEhRwCwQdQ3",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b273a6de55fe4c950e6e4910f781"
+  },
+  {
+    "rank": 11,
+    "title": "アストロビート",
+    "artist": "Dannie May",
+    "plays": 32,
+    "size": "small",
+    "spotify_url": "https://open.spotify.com/track/0gwXJLBIchAOXF6JH29RmC",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b2736598d621bcc2485d8178784d"
+  },
+  {
+    "rank": 12,
+    "title": "ワールドイズマイン - かぐや&月見ヤチヨ ver. - CPK! Remix",
+    "artist": "ryo (supercell)",
+    "plays": 30,
+    "size": "small",
+    "spotify_url": "https://open.spotify.com/track/0LswwmDZ6Qk26ZgVRf7aMO",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b273c688d674ffa87ec3e13810f3"
+  },
+  {
+    "rank": 13,
+    "title": "茜",
+    "artist": "ヨルシカ",
+    "plays": 25,
+    "size": "small",
+    "spotify_url": "https://open.spotify.com/track/2TSJ1d6cLgHqrrCIRN3bn2",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b273da956a7a9ece3e30ef741490"
+  },
+  {
+    "rank": 14,
+    "title": "DUET",
+    "artist": "ZICO",
+    "plays": 22,
+    "size": "small",
+    "spotify_url": "https://open.spotify.com/track/0M4O6UEu4F9SxImTsBuX9n",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b27376b859d6874da8750df6608a"
   },
   {
     "rank": 15,
-    "title": "夏夜のマジック",
-    "artist": "indigo la End",
-    "plays": 29,
+    "title": "nevermind",
+    "artist": "muque",
+    "plays": 18,
     "size": "small",
-    "spotify_url": "https://open.spotify.com/track/144pIQC3mpmUkZXMt8fIwb",
-    "image_url": "https://i.scdn.co/image/ab67616d0000b2734a0591543ec959eead4e2a1a"
+    "spotify_url": "https://open.spotify.com/track/0CRbc6n3eHpJNr5Xy97IX1",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b2730eaf86b247136eb13c1977a6"
   },
   {
     "rank": 16,
-    "title": "2",
-    "artist": "Siip",
-    "plays": 24,
+    "title": "フィナーレ。",
+    "artist": "eill",
+    "plays": 17,
     "size": "small",
-    "spotify_url": "https://open.spotify.com/track/7gD0Vw3dByZiWXGiTKcYX7",
-    "image_url": "https://i.scdn.co/image/ab67616d0000b273273dd1c6b89c916d690e395b"
+    "spotify_url": "https://open.spotify.com/track/5qIlqZyWVeQeQ7weYYvrKv",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b273c6b96eab2bb1fa0b1b606fb0"
   },
   {
     "rank": 17,
-    "title": "五月雨",
-    "artist": "439*hz",
-    "plays": 22,
+    "title": "逃亡",
+    "artist": "ヨルシカ",
+    "plays": 16,
     "size": "small",
-    "spotify_url": "https://open.spotify.com/track/4vfXoNXd78GK0lrG1XqhGR",
-    "image_url": "https://i.scdn.co/image/ab67616d0000b273704ff43bd5a2e9b2e9d13465"
+    "spotify_url": "https://open.spotify.com/track/444TdAemfLOz77t9dlCeAa",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b2732794743c6eb13addc2b01420"
   },
   {
     "rank": 18,
-    "title": "これも愛としよう",
-    "artist": "Aki",
-    "plays": 20,
+    "title": "サラダボウル",
+    "artist": "Aooo",
+    "plays": 16,
     "size": "small",
-    "spotify_url": "https://open.spotify.com/track/7nvfTo6GhOD5oMJkmL609b",
-    "image_url": "https://i.scdn.co/image/ab67616d0000b273cc93f93bc894fa19b588fdef"
+    "spotify_url": "https://open.spotify.com/track/4QHnIlkaPHu6vC0EbeLwtk",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b273a1f406cb1534c1d1f4c79cb2"
   },
   {
     "rank": 19,
-    "title": "でもね、たまには",
-    "artist": "imase",
-    "plays": 18,
+    "title": "此岸",
+    "artist": "wata",
+    "plays": 15,
     "size": "small",
-    "spotify_url": "https://open.spotify.com/track/3gdwIOUmXi1g7LD0d3mgh0",
-    "image_url": "https://i.scdn.co/image/ab67616d0000b27348844a6d3c76aa72f3c93fac"
+    "spotify_url": "https://open.spotify.com/track/1pynepGxUThXpxE349VEKX",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b273fdca5ba9108c06d212225b28"
   },
   {
     "rank": 20,
-    "title": "HACK",
-    "artist": "Shuta Sueyoshi",
-    "plays": 18,
+    "title": "小波",
+    "artist": "wata",
+    "plays": 15,
     "size": "small",
-    "spotify_url": "https://open.spotify.com/track/6sUsZUvJ1RxXK80EG3DQM2",
-    "image_url": "https://i.scdn.co/image/ab67616d0000b27349cd281730fa83e7af6b092b"
+    "spotify_url": "https://open.spotify.com/track/3RXeOxX6iSOPuGuvlBOeQD",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b273fdca5ba9108c06d212225b28"
   }
 ]
