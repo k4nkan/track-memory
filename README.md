@@ -9,3 +9,4 @@ Spotify の月間再生データをまとめて、グリッドで表示する小
 ## Structure
 - `design/`: 表示まわりの HTML / CSS / JS
 - `script/main.py`: Supabase から月間ランキングを取得して JSON を出力
+- `.github/workflows/update-data.yml`: 月初に `design/data.json` を自動更新

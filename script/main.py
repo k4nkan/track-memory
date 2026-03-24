@@ -4,6 +4,7 @@ Fetch monthly track ranking from Supabase and return as JSON.
 
 import json
 import os
+from datetime import date
 from typing import Dict, List
 
 from dotenv import load_dotenv
@@ -18,6 +19,18 @@ if not url or not key:
     raise RuntimeError("Missing Supabase env variables")
 
 supabase = create_client(url, key)
+
+
+def get_previous_month(today: date | None = None) -> tuple[int, int]:
+    """
+    Return the previous month as (year, month).
+    """
+    current = today or date.today()
+
+    if current.month == 1:
+        return current.year - 1, 12
+
+    return current.year, current.month - 1
 
 
 def fetch_monthly_ranking(year: int, month: int, limit: int = 50) -> List[Dict]:
@@ -54,6 +67,9 @@ def fetch_monthly_ranking(year: int, month: int, limit: int = 50) -> List[Dict]:
 
 
 if __name__ == "__main__":
-    data = fetch_monthly_ranking(2026, 2, 20)
+    year, month = get_previous_month()
+    limit = int(os.getenv("SONG_RESULT_LIMIT", "20"))
+    data = fetch_monthly_ranking(year, month, limit)
+
     with open("design/data.json", "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
