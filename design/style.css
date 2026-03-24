@@ -1,84 +1,71 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #f5f5f5;
+  --surface: #fff;
+  --border: #d9d9d9;
+  --grid-line: #d7ecff;
+  --grid-size: min(90vw, 560px);
+  --grid-gap: 8px;
+  --grid-gap-mobile: 6px;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
 }
 
 body {
-  margin: 0;
-  font-family: sans-serif;
-  background: #f2f2f2;
-  color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.page {
-  max-width: 1080px;
-  margin: 0 auto;
-  padding: 32px 16px 56px;
-}
-
-.page-header {
-  margin-bottom: 20px;
-}
-
-.eyebrow {
-  margin: 0 0 8px;
-  font-size: 12px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: #777;
-}
-
-.page-header h1 {
-  margin: 0;
-  font-size: 36px;
-}
-
-.card-grid {
+.page,
+.grid-wrap {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 12px;
-}
-
-.card {
-  overflow: hidden;
-  border: 1px solid #d8d8d8;
-  border-radius: 12px;
-  background: #fff;
-}
-
-.cover {
-  display: block;
+  place-items: center;
   width: 100%;
+  min-height: 100%;
+  background: var(--bg);
+}
+
+.grid {
+  display: grid;
+  width: var(--grid-size);
   aspect-ratio: 1;
-  object-fit: cover;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  gap: var(--grid-gap);
+  padding: var(--grid-gap);
+  background: var(--surface);
+  border: 1px solid var(--border);
 }
 
-.card-body {
-  padding: 12px;
+.grid-cell,
+.item {
+  min-width: 0;
+  min-height: 0;
 }
 
-.rank,
-.artist,
-.meta {
-  margin: 0;
+.grid-cell {
+  border: 1px solid var(--grid-line);
 }
 
-.rank {
-  margin-bottom: 8px;
-  font-size: 13px;
-  color: #666;
+.item {
+  border: 1px solid var(--grid-line);
+  background-size: cover;
+  background-position: center;
 }
 
-.card-body h2 {
-  margin: 0 0 6px;
-  font-size: 17px;
-  line-height: 1.3;
-}
-
-.artist {
-  margin-bottom: 8px;
-}
-
-.meta,
-.empty {
-  color: #666;
+@media (max-width: 720px) {
+  .grid {
+    gap: var(--grid-gap-mobile);
+    padding: var(--grid-gap-mobile);
+  }
 }

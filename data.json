@@ -22,7 +22,7 @@
     "title": "火星人",
     "artist": "ヨルシカ",
     "plays": 97,
-    "size": "large",
+    "size": "medium",
     "spotify_url": "https://open.spotify.com/track/5RKDnMLQdvkk4OLxF0uBj6",
     "image_url": "https://i.scdn.co/image/ab67616d0000b273bf6d9ce80cf22dbba24efdbb"
   },
@@ -49,7 +49,7 @@
     "title": "TIME TO LUV (feat. 幾田りら)",
     "artist": "ピーナッツくん",
     "plays": 57,
-    "size": "medium",
+    "size": "small",
     "spotify_url": "https://open.spotify.com/track/2rQAvl1XSb28FVq7eL2Z2j",
     "image_url": "https://i.scdn.co/image/ab67616d0000b2734873c0e0aab477bb38c07886"
   },
@@ -58,7 +58,7 @@
     "title": "weekly",
     "artist": "にしな",
     "plays": 53,
-    "size": "medium",
+    "size": "small",
     "spotify_url": "https://open.spotify.com/track/6DeyonC0kWc9WmHo5PilOA",
     "image_url": "https://i.scdn.co/image/ab67616d0000b27372730d2805899829fb3d1cac"
   },
@@ -67,7 +67,7 @@
     "title": "Chocolate",
     "artist": "CHANMINA",
     "plays": 40,
-    "size": "medium",
+    "size": "small",
     "spotify_url": "https://open.spotify.com/track/6CU3VvoeQgkg4Wb1vS0zj7",
     "image_url": "https://i.scdn.co/image/ab67616d0000b2737f485f8a4f640ff53611be0e"
   },
@@ -76,7 +76,7 @@
     "title": "プレイシック",
     "artist": "ヨルシカ",
     "plays": 38,
-    "size": "medium",
+    "size": "small",
     "spotify_url": "https://open.spotify.com/track/4HWJSaMneOtNkFOrD1LU0c",
     "image_url": "https://i.scdn.co/image/ab67616d0000b27341bbd3feddbe89025c3d4fd2"
   },
@@ -85,8 +85,53 @@
     "title": "Something Comforting",
     "artist": "Porter Robinson",
     "plays": 37,
-    "size": "medium",
+    "size": "small",
     "spotify_url": "https://open.spotify.com/track/0AGCxjgxUcTfEhRwCwQdQ3",
     "image_url": "https://i.scdn.co/image/ab67616d0000b273a6de55fe4c950e6e4910f781"
+  },
+  {
+    "rank": 11,
+    "title": "アストロビート",
+    "artist": "Dannie May",
+    "plays": 32,
+    "size": "small",
+    "spotify_url": "https://open.spotify.com/track/0gwXJLBIchAOXF6JH29RmC",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b2736598d621bcc2485d8178784d"
+  },
+  {
+    "rank": 12,
+    "title": "ワールドイズマイン - かぐや&月見ヤチヨ ver. - CPK! Remix",
+    "artist": "ryo (supercell)",
+    "plays": 30,
+    "size": "small",
+    "spotify_url": "https://open.spotify.com/track/0LswwmDZ6Qk26ZgVRf7aMO",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b273c688d674ffa87ec3e13810f3"
+  },
+  {
+    "rank": 13,
+    "title": "茜",
+    "artist": "ヨルシカ",
+    "plays": 25,
+    "size": "small",
+    "spotify_url": "https://open.spotify.com/track/2TSJ1d6cLgHqrrCIRN3bn2",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b273da956a7a9ece3e30ef741490"
+  },
+  {
+    "rank": 14,
+    "title": "DUET",
+    "artist": "ZICO",
+    "plays": 22,
+    "size": "small",
+    "spotify_url": "https://open.spotify.com/track/0M4O6UEu4F9SxImTsBuX9n",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b27376b859d6874da8750df6608a"
+  },
+  {
+    "rank": 15,
+    "title": "nevermind",
+    "artist": "muque",
+    "plays": 18,
+    "size": "small",
+    "spotify_url": "https://open.spotify.com/track/0CRbc6n3eHpJNr5Xy97IX1",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b2730eaf86b247136eb13c1977a6"
   }
 ]
