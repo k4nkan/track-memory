@@ -2,16 +2,14 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Hachi Maru Pop", cursive;
 }
 
 :root {
-  --bg: #f5f5f5;
-  --surface: #fff;
-  --border: #d9d9d9;
-  --grid-line: #d7ecff;
-  --grid-size: min(90vw, 560px);
-  --grid-gap: 8px;
-  --grid-gap-mobile: 6px;
+  --gap: 0.25rem;
+  --padding: 1rem;
+  --content-width: min(90vw, 560px);
+  --border-color: #eee;
 }
 
 html,
@@ -26,46 +24,74 @@ body {
   align-items: center;
 }
 
-.page,
-.grid-wrap {
-  display: grid;
-  place-items: center;
+.page {
   width: 100%;
-  min-height: 100%;
-  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap);
+}
+
+.page-header {
+  width: 100%;
+  max-width: var(--content-width);
+  text-align: left;
+  padding: var(--padding);
+}
+
+.page-header h1 {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  line-height: 1;
+}
+
+.page-header p {
+  margin-top: 0.5rem;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  line-height: 1.3;
+}
+
+.grid-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: var(--padding);
 }
 
 .grid {
   display: grid;
-  width: var(--grid-size);
+  width: 100%;
+  max-width: var(--content-width);
   aspect-ratio: 1;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(7, 1fr);
-  gap: var(--grid-gap);
-  padding: var(--grid-gap);
-  background: var(--surface);
-  border: 1px solid var(--border);
+  gap: var(--gap);
+  padding: var(--padding);
 }
 
-.grid-cell,
 .item {
+  display: block;
   min-width: 0;
   min-height: 0;
-}
-
-.grid-cell {
-  border: 1px solid var(--grid-line);
-}
-
-.item {
-  border: 1px solid var(--grid-line);
   background-size: cover;
   background-position: center;
+  text-decoration: none;
+  border: 2px solid var(--border-color);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 @media (max-width: 720px) {
-  .grid {
-    gap: var(--grid-gap-mobile);
-    padding: var(--grid-gap-mobile);
+  :root {
+    --gap: 6px;
   }
 }

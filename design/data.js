@@ -7,21 +7,13 @@ const SIZE_MAP = {
   small: 1,
 };
 
-function createBaseCells() {
-  for (let row = 1; row <= GRID_SIZE; row += 1) {
-    for (let col = 1; col <= GRID_SIZE; col += 1) {
-      const cell = document.createElement("div");
-      cell.className = "grid-cell";
-      cell.style.gridColumn = col;
-      cell.style.gridRow = row;
-      grid.appendChild(cell);
-    }
-  }
-}
-
 function createItem(item, slot) {
-  const element = document.createElement("div");
+  const element = document.createElement("a");
   element.className = "item";
+  element.href = item.spotify_url;
+  element.target = "_blank";
+  element.rel = "noreferrer";
+  element.setAttribute("aria-label", `${item.title} - ${item.artist}`);
   element.style.gridColumn = `${slot.col} / span ${slot.span}`;
   element.style.gridRow = `${slot.row} / span ${slot.span}`;
   element.style.backgroundImage = `url("${item.image_url}")`;
@@ -64,6 +56,10 @@ function getRandomSlot(used, span) {
 
   for (let row = 1; row <= GRID_SIZE - span + 1; row += 1) {
     for (let col = 1; col <= GRID_SIZE - span + 1; col += 1) {
+      if (span === 3 && col === 3 && row === 3) {
+        continue;
+      }
+
       if (canPlace(used, col, row, span)) {
         availableSlots.push({ col, row, span });
       }
@@ -77,8 +73,6 @@ function buildGrid(items) {
   const used = Array.from({ length: GRID_SIZE + 1 }, () =>
     Array(GRID_SIZE + 1).fill(false),
   );
-
-  createBaseCells();
 
   items.forEach((item) => {
     const span = SIZE_MAP[item.size] || SIZE_MAP.small;
