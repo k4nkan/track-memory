@@ -16,8 +16,16 @@
   <body>
     <main class="page">
       <header class="page-header">
-        <h1>No Music, No Life.</h1>
-        <p>先月いっぱい聞いた曲</p>
+        <div class="header-content">
+          <div>
+            <h1>No Music, No Life.</h1>
+            <p>いっぱい聞いた曲</p>
+          </div>
+          <select id="month-select" class="month-select" aria-label="Select month">
+            <option value="2026-02.json" selected>2026年2月</option>
+            <option value="2026-01.json">2026年1月</option>
+          </select>
+        </div>
       </header>
 
       <section class="grid-section" aria-labelledby="grid-title">

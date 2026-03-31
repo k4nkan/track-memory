@@ -71,5 +71,5 @@ if __name__ == "__main__":
     limit = int(os.getenv("SONG_RESULT_LIMIT", "20"))
     data = fetch_monthly_ranking(year, month, limit)
 
-    with open("design/data.json", "w", encoding="utf-8") as f:
+    with open(f"design/datas/{year}-{month:02d}.json", "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
