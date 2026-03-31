@@ -1,4 +1,5 @@
 const grid = document.getElementById("grid");
+const monthSelect = document.getElementById("month-select");
 
 const GRID_SIZE = 7;
 const MAX_RETRIES = 200;
@@ -111,28 +112,38 @@ function buildGrid(items) {
   console.warn("Could not place all items in the grid.");
 }
 
-fetch("../data.json")
-  .then((response) => {
-    if (!response.ok) {
-      throw new Error("Failed to load data.json");
-    }
-
-    return response.json();
-  })
-  .then((items) => {
-    const sorted = [...items].sort((a, b) => {
-      const aSpan = SIZE_MAP[a.size] || SIZE_MAP.small;
-      const bSpan = SIZE_MAP[b.size] || SIZE_MAP.small;
-
-      if (aSpan === bSpan) {
-        return a.rank - b.rank;
+function updateData(filename) {
+  fetch(`..datas/${filename}`)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`Failed to load ${filename}`);
       }
 
-      return bSpan - aSpan;
-    });
+      return response.json();
+    })
+    .then((items) => {
+      const sorted = [...items].sort((a, b) => {
+        const aSpan = SIZE_MAP[a.size] || SIZE_MAP.small;
+        const bSpan = SIZE_MAP[b.size] || SIZE_MAP.small;
 
-    buildGrid(sorted);
-  })
-  .catch((error) => {
-    console.error(error);
-  });
+        if (aSpan === bSpan) {
+          return a.rank - b.rank;
+        }
+
+        return bSpan - aSpan;
+      });
+
+      buildGrid(sorted);
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+}
+
+// Initial load
+updateData(monthSelect.value);
+
+// Listen for changes
+monthSelect.addEventListener("change", (e) => {
+  updateData(e.target.value);
+});
