@@ -32,11 +32,11 @@ jobs:
           SONG_RESULT_LIMIT: "20"
         run: python script/main.py
 
-      - name: Commit changes
+      - name: Commit monthly data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add design/data.json
+          git add design/datas/
           git diff --cached --quiet || git commit -m "Update monthly data"
 
       - name: Push changes

@@ -113,7 +113,8 @@ function buildGrid(items) {
 }
 
 function updateData(filename) {
-  fetch(`../datas/${filename}`)
+  // Fetch from the 'datas' folder inside the 'design' directory
+  fetch(`datas/${filename}`)
     .then((response) => {
       if (!response.ok) {
         throw new Error(`Failed to load ${filename}`);
