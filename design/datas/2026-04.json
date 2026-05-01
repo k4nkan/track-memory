@@ -1,0 +1,182 @@
+[
+  {
+    "rank": 1,
+    "title": "Unbelievable",
+    "artist": "Owl City",
+    "plays": 130,
+    "size": "large",
+    "spotify_url": "https://open.spotify.com/track/6vysCzjEwFF4flCw3d6DeO",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b273f82babf0861d326c7797ab9a"
+  },
+  {
+    "rank": 2,
+    "title": "LONG JOURNEY",
+    "artist": "haruka nakamura",
+    "plays": 129,
+    "size": "large",
+    "spotify_url": "https://open.spotify.com/track/45KsaIvfwCeU4SGJQgkgG8",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b273132fbf21451ffef6a6a426d8"
+  },
+  {
+    "rank": 3,
+    "title": "SELF",
+    "artist": "ざらばんし",
+    "plays": 122,
+    "size": "medium",
+    "spotify_url": "https://open.spotify.com/track/000IngOSeNlUFNNsbZ5gd1",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b273612878af7fb879cf2d7982a8"
+  },
+  {
+    "rank": 4,
+    "title": "眠くない街",
+    "artist": "(sic)boy",
+    "plays": 81,
+    "size": "medium",
+    "spotify_url": "https://open.spotify.com/track/5BS9XIFRevtZHiox82yQRa",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b2732e48476ca5deb5d97219b1f7"
+  },
+  {
+    "rank": 5,
+    "title": "火種",
+    "artist": "Tatsuya Kitani",
+    "plays": 73,
+    "size": "medium",
+    "spotify_url": "https://open.spotify.com/track/3WaAa5Fc3LgN7QRn5oVomX",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b273290cdcb0dc4a9492369f71b7"
+  },
+  {
+    "rank": 6,
+    "title": "冬のひ",
+    "artist": "katawara",
+    "plays": 51,
+    "size": "small",
+    "spotify_url": "https://open.spotify.com/track/6psrsfO0wpEdltfk9lonfG",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b273c14135c92a3c1b3a4fefbc28"
+  },
+  {
+    "rank": 7,
+    "title": "Lip Noise",
+    "artist": "TOMOO",
+    "plays": 48,
+    "size": "small",
+    "spotify_url": "https://open.spotify.com/track/0zcISLzZHpeoX4Oy94t1ba",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b2735506ec41afc5e3742b04bd77"
+  },
+  {
+    "rank": 8,
+    "title": "weekly",
+    "artist": "にしな",
+    "plays": 39,
+    "size": "small",
+    "spotify_url": "https://open.spotify.com/track/6DeyonC0kWc9WmHo5PilOA",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b27372730d2805899829fb3d1cac"
+  },
+  {
+    "rank": 9,
+    "title": "カイコ",
+    "artist": "RADWIMPS",
+    "plays": 38,
+    "size": "small",
+    "spotify_url": "https://open.spotify.com/track/0KmIgcKFQ54ps7uj0Rhrk6",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b2733c348d6087805c58893db099"
+  },
+  {
+    "rank": 10,
+    "title": "TOMATO",
+    "artist": "7co",
+    "plays": 34,
+    "size": "small",
+    "spotify_url": "https://open.spotify.com/track/0GJP5g4CjVWfxdUJ97n5wt",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b27397c68c44172477c3fcba27e9"
+  },
+  {
+    "rank": 11,
+    "title": "The Nights",
+    "artist": "Avicii",
+    "plays": 33,
+    "size": "small",
+    "spotify_url": "https://open.spotify.com/track/0ct6r3EGTcMLPtrXHDvVjc",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b2730ae4f4d42e4a09f3a29f64ad"
+  },
+  {
+    "rank": 12,
+    "title": "Strobo",
+    "artist": "illion",
+    "plays": 31,
+    "size": "small",
+    "spotify_url": "https://open.spotify.com/track/2ODz0WWWGrbduxuHOFbGzd",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b273bb2b2777e088b4b1ae49ebdf"
+  },
+  {
+    "rank": 13,
+    "title": "雀ノ欠伸",
+    "artist": "Saucy Dog",
+    "plays": 29,
+    "size": "small",
+    "spotify_url": "https://open.spotify.com/track/093PMBsGoUGQp7FeHth4OV",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b273a8215c024ca0629f20ca2339"
+  },
+  {
+    "rank": 14,
+    "title": "ベイビーブルー",
+    "artist": "MONONOKE",
+    "plays": 27,
+    "size": "small",
+    "spotify_url": "https://open.spotify.com/track/5RzR232Ryf145KYJintc7H",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b273051d5f88c5efdc5ee57913fb"
+  },
+  {
+    "rank": 15,
+    "title": "Perfect Strangers",
+    "artist": "Jonas Blue",
+    "plays": 27,
+    "size": "small",
+    "spotify_url": "https://open.spotify.com/track/3P3pw6C19j31Rnzgo3JG7o",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b2735b6bcc59c3562a6f362344c6"
+  },
+  {
+    "rank": 16,
+    "title": "SSAK (Feat. Loco) (Prod. By GRAY)",
+    "artist": "OXYNOVA",
+    "plays": 25,
+    "size": "small",
+    "spotify_url": "https://open.spotify.com/track/0FOReGSXypVBP1q3CLEbfN",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b2736d693c011ddf555e56206e5d"
+  },
+  {
+    "rank": 17,
+    "title": "ロープウェイ",
+    "artist": "Tele",
+    "plays": 24,
+    "size": "small",
+    "spotify_url": "https://open.spotify.com/track/04V3qBeUdgBgXMk9vBJlPD",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b273f7114a448a1aa980bed7ce24"
+  },
+  {
+    "rank": 18,
+    "title": "Shine Out",
+    "artist": "imase",
+    "plays": 23,
+    "size": "small",
+    "spotify_url": "https://open.spotify.com/track/2FgLVjctguMwUcYURQUOYA",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b2734fcf1e9d0f1dc7e0b2ec296c"
+  },
+  {
+    "rank": 19,
+    "title": "4:04 AM",
+    "artist": "439*hz",
+    "plays": 23,
+    "size": "small",
+    "spotify_url": "https://open.spotify.com/track/7g8L2LdzU5mbZGLxowkF0O",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b27346272d39da67ff88582c7568"
+  },
+  {
+    "rank": 20,
+    "title": "惑星都市",
+    "artist": "HALVES",
+    "plays": 21,
+    "size": "small",
+    "spotify_url": "https://open.spotify.com/track/6jlWkEmC43BYnAhI4z5D0A",
+    "image_url": "https://i.scdn.co/image/ab67616d0000b2734b4d72bc552e7ee7d537a2f4"
+  }
+]
