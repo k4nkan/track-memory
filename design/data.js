@@ -9,6 +9,22 @@ const SIZE_MAP = {
   small: 1,
 };
 
+function formatMonthLabel(year, month) {
+  return `${year}年${month}月`;
+}
+
+function populateMonthSelect(months) {
+  monthSelect.replaceChildren();
+
+  months.forEach((month, index) => {
+    const option = document.createElement("option");
+    option.value = month.filename;
+    option.textContent = month.label || formatMonthLabel(month.year, month.month);
+    option.selected = index === 0;
+    monthSelect.appendChild(option);
+  });
+}
+
 function createItem(item, slot) {
   const element = document.createElement("a");
   element.className = "item";
@@ -113,7 +129,6 @@ function buildGrid(items) {
 }
 
 function updateData(filename) {
-  // Fetch from the 'datas' folder inside the 'design' directory
   fetch(`datas/${filename}`)
     .then((response) => {
       if (!response.ok) {
@@ -141,10 +156,31 @@ function updateData(filename) {
     });
 }
 
-// Initial load
-updateData(monthSelect.value);
+function loadMonthIndex() {
+  fetch("datas/index.json")
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Failed to load month index");
+      }
 
-// Listen for changes
+      return response.json();
+    })
+    .then((months) => {
+      if (!Array.isArray(months) || months.length === 0) {
+        throw new Error("Month index is empty");
+      }
+
+      populateMonthSelect(months);
+      updateData(monthSelect.value);
+    })
+    .catch((error) => {
+      console.error(error);
+      updateData(monthSelect.value);
+    });
+}
+
+loadMonthIndex();
+
 monthSelect.addEventListener("change", (e) => {
   updateData(e.target.value);
 });

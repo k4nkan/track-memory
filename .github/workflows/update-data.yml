@@ -25,7 +25,7 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Update data.json
+      - name: Update monthly data
         env:
           SONG_SUPABASE_URL: ${{ secrets.SONG_SUPABASE_URL }}
           SONG_SUPABASE_KEY: ${{ secrets.SONG_SUPABASE_KEY }}
