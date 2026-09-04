@@ -1,4 +1,5 @@
 const months = document.getElementById("months");
+const loading = document.getElementById("loading");
 const fadeObserver = new IntersectionObserver((entries, observer) => {
   entries.forEach(({ target, isIntersecting }) => {
     if (isIntersecting) {
@@ -19,7 +20,7 @@ const SIZE_MAP = {
 };
 
 function formatMonthLabel(year, month) {
-  return `${year}年${month}月`;
+  return `${year}.${String(month).padStart(2, "0")}`;
 }
 
 function createItem(item, slot) {
@@ -144,6 +145,7 @@ async function updateData(filename, grid) {
 
 async function load() {
   try {
+    await document.fonts.ready;
     const response = await fetch("datas/index.json");
     if (!response.ok) throw new Error("Failed to load month index");
 
@@ -156,13 +158,15 @@ async function load() {
         <div class="grid"></div>
       </section>`).join("");
 
-    entries.forEach((month, index) => {
+    await Promise.all(entries.map((month, index) => {
       const section = months.children[index];
       fadeObserver.observe(section);
-      updateData(month.filename, section.querySelector(".grid"));
-    });
+      return updateData(month.filename, section.querySelector(".grid"));
+    }));
   } catch (error) {
     console.error(error);
+  } finally {
+    loading.classList.add("is-hidden");
   }
 }
 

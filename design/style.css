@@ -30,7 +30,20 @@ html {
 body {
   display: flex;
   justify-content: center;
-  font-family: "AP", cursive;
+  font-family: "AP", monospace;
+}
+
+#loading {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  background: #fff;
+}
+
+#loading.is-hidden {
+  display: none;
 }
 
 @keyframes fade-in {
