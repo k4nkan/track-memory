@@ -1,5 +1,14 @@
-const grid = document.getElementById("grid");
-const monthSelect = document.getElementById("month-select");
+const months = document.getElementById("months");
+const fadeObserver = new IntersectionObserver((entries, observer) => {
+  entries.forEach(({ target, isIntersecting }) => {
+    if (isIntersecting) {
+      target.classList.add("is-visible");
+      observer.unobserve(target);
+    }
+  });
+}, { threshold: 0.5 });
+
+fadeObserver.observe(document.querySelector(".page-header"));
 
 const GRID_SIZE = 7;
 const MAX_RETRIES = 200;
@@ -11,18 +20,6 @@ const SIZE_MAP = {
 
 function formatMonthLabel(year, month) {
   return `${year}年${month}月`;
-}
-
-function populateMonthSelect(months) {
-  monthSelect.replaceChildren();
-
-  months.forEach((month, index) => {
-    const option = document.createElement("option");
-    option.value = month.filename;
-    option.textContent = month.label || formatMonthLabel(month.year, month.month);
-    option.selected = index === 0;
-    monthSelect.appendChild(option);
-  });
 }
 
 function createItem(item, slot) {
@@ -108,7 +105,7 @@ function getPlacements(items) {
   return placements;
 }
 
-function buildGrid(items) {
+function buildGrid(grid, items) {
   grid.replaceChildren();
 
   for (let i = 0; i < MAX_RETRIES; i += 1) {
@@ -128,59 +125,45 @@ function buildGrid(items) {
   console.warn("Could not place all items in the grid.");
 }
 
-function updateData(filename) {
-  fetch(`datas/${filename}`)
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error(`Failed to load ${filename}`);
-      }
+async function updateData(filename, grid) {
+  try {
+    const response = await fetch(`datas/${filename}`);
+    if (!response.ok) throw new Error(`Failed to load ${filename}`);
 
-      return response.json();
-    })
-    .then((items) => {
-      const sorted = [...items].sort((a, b) => {
-        const aSpan = SIZE_MAP[a.size] || SIZE_MAP.small;
-        const bSpan = SIZE_MAP[b.size] || SIZE_MAP.small;
-
-        if (aSpan === bSpan) {
-          return a.rank - b.rank;
-        }
-
-        return bSpan - aSpan;
-      });
-
-      buildGrid(sorted);
-    })
-    .catch((error) => {
-      console.error(error);
+    const items = await response.json();
+    items.sort((a, b) => {
+      const aSpan = SIZE_MAP[a.size] || SIZE_MAP.small;
+      const bSpan = SIZE_MAP[b.size] || SIZE_MAP.small;
+      return aSpan === bSpan ? a.rank - b.rank : bSpan - aSpan;
     });
+    buildGrid(grid, items);
+  } catch (error) {
+    console.error(error);
+  }
 }
 
-function loadMonthIndex() {
-  fetch("datas/index.json")
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error("Failed to load month index");
-      }
+async function load() {
+  try {
+    const response = await fetch("datas/index.json");
+    if (!response.ok) throw new Error("Failed to load month index");
 
-      return response.json();
-    })
-    .then((months) => {
-      if (!Array.isArray(months) || months.length === 0) {
-        throw new Error("Month index is empty");
-      }
+    const entries = await response.json();
+    if (!entries.length) throw new Error("Month index is empty");
 
-      populateMonthSelect(months);
-      updateData(monthSelect.value);
-    })
-    .catch((error) => {
-      console.error(error);
-      updateData(monthSelect.value);
+    months.innerHTML = entries.map((month) => `
+      <section>
+        <h3>${month.label || formatMonthLabel(month.year, month.month)}</h3>
+        <div class="grid"></div>
+      </section>`).join("");
+
+    entries.forEach((month, index) => {
+      const section = months.children[index];
+      fadeObserver.observe(section);
+      updateData(month.filename, section.querySelector(".grid"));
     });
+  } catch (error) {
+    console.error(error);
+  }
 }
 
-loadMonthIndex();
-
-monthSelect.addEventListener("change", (e) => {
-  updateData(e.target.value);
-});
+load();
