@@ -3,7 +3,7 @@
 Spotify の月間再生データをまとめて、グリッドで表示する小さなアプリです。
 
 ## Links
-- App: https://track-log.netlify.app/
+- App: https://tracks.k4nkan.com/
 - Log collector: https://github.com/k4nkan/save-spotify-logs
 
 ## Structure
